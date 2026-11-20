@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Patient Appointment Management</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>City Care Hospital</h1>
+        <p>Your Health, Our Priority</p>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to City Care Hospital</h2>
+            <p>
+                We provide quality healthcare services
+                with experienced doctors and modern facilities.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Hospital Services</h2>
+
+            <article>
+                <h3>Cardiology</h3>
+                <p>Complete heart care and treatment.</p>
+            </article>
+
+            <article>
+                <h3>Neurology</h3>
+                <p>Advanced brain and nervous system care.</p>
+            </article>
+
+            <article>
+                <h3>Orthopedics</h3>
+                <p>Bone and joint treatment services.</p>
+            </article>
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+
+            <article>
+                <h3>Dr. Ravi Kumar</h3>
+                <p>Cardiologist</p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya Sharma</h3>
+                <p>Neurologist</p>
+            </article>
+
+            <article>
+                <h3>Dr. Arjun Reddy</h3>
+                <p>Orthopedic Specialist</p>
+            </article>
+        </section>
+
+        <!-- Appointment Form -->
+        <section id="appointment">
+            <h2>Book a Patient Appointment</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Patient Information</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="10-digit phone number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        autocomplete="tel"
+                        required>
+
+                    <br><br>
+
+                    <label for="date">Appointment Date:</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required>
+
+                    <br><br>
+
+                    <label for="department">Select Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Choose Department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="message">Additional Information:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        cols="30"
+                        placeholder="Enter your message">
+                    </textarea>
+
+                    <br><br>
+
+                    <button type="submit">Book Appointment</button>
+                    <button type="reset">Clear Form</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                City Care Hospital,<br>
+                Vijayawada, Andhra Pradesh, India.<br>
+                Email: info@citycarehospital.com
+            </address>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 City Care Hospital. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
